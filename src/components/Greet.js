@@ -1,17 +1,29 @@
 import React from 'react';
 
-// Function syntax standard JS
-// function Greet() {
-//     return <h1> Hello Terry, punk!</h1>
+// props
+// const Greet = props => {
+//     console.log(props)
+//     return (
+//     <div>
+//         <h1>
+//             Hello {props.name}, a.k.a {props.heroName} 
+//         </h1>
+//         {props.children}
+//     </div>
+//     )
 // }
 
-// Arrow functions (usually more concise)
-const Greet = () =>
-    <h1>Hello Terry, punk! </h1>
+const Greet = props => {
+    console.log(props)
+    return (
+    <div>
+        <h1>
+            Hello {props.name}, a.k.a {props.heroName} 
+        </h1>
+        {props.children}
+    </div>
+    )
+}
 
 export default Greet;
 
-
-//Can also do a named exports such as
-//export const Greet = () =>
-//    <h1>Hello Terry, punk! </h1>
